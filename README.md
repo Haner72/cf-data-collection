@@ -20,7 +20,7 @@ Inicialmente, todos os vendedores podem fazer negócio com todos os clientes, ma
 
 Requisitos técnicos:
 
-O desafio deve ser entregue escrito em Node e Angular;
+O desafio deve ser entregue escrito em Java e Angular;
 
 Entrega:
 
