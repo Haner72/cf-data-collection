@@ -11,9 +11,8 @@ import { ApiService } from './api-service';
 })
 export class AppComponent implements OnInit {
   title = 'Data Collection';
-  message: string = '';
 
-  constructor(private Service: ApiService) { }
+  constructor(private ApiService: ApiService) { }
 
   ngOnInit(): void {
   }
