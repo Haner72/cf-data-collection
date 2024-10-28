@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Service } from './service';
+import { ApiService } from './api-service';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +13,8 @@ export class AppComponent implements OnInit {
   title = 'Data Collection';
   message: string = '';
 
-  constructor(private Service: Service) { }
+  constructor(private Service: ApiService) { }
 
   ngOnInit(): void {
-      this.Service.dizOiCaroline().subscribe((data: string) => {
-        this.message = data;
-      });
   }
 }
