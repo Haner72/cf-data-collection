@@ -1,1 +1,5 @@
 com\data\collection\Application.class
+com\data\collection\controller\DIController.class
+com\data\collection\model\DIModel.class
+com\data\collection\service\DIService.class
+com\data\collection\repository\DIRepository.class

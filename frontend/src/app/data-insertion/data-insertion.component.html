@@ -1,1 +1,43 @@
-<p>data-insertion works!</p>
+<div class="geral">
+    <form [formGroup]="dataInsertionForm" (ngSubmit)="onSubmit()" class="form">
+      <div class="form-group">
+        <label for="name" class="label">Nome</label>
+        <input id="name" type="text" formControlName="name" class="input" placeholder="Digite seu nome" />
+        <div *ngIf="dataInsertionForm.get('name')?.invalid && dataInsertionForm.get('name')?.touched" class="error-message">
+          {{ getErrorMessage('name') }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="label">E-mail</label>
+        <input id="email" type="email" formControlName="email" class="input" placeholder="Digite seu e-mail" />
+        <div *ngIf="dataInsertionForm.get('email')?.invalid && dataInsertionForm.get('email')?.touched" class="error-message">
+          {{ getErrorMessage('email') }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="label">Telefone</label>
+        <input id="phone" type="text" formControlName="phone" class="input" placeholder="Digite seu telefone" />
+        <div *ngIf="dataInsertionForm.get('phone')?.invalid && dataInsertionForm.get('phone')?.touched" class="error-message">
+          {{ getErrorMessage('phone') }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="city" class="label">Cidade</label>
+        <input id="city" type="text" formControlName="city" class="input" placeholder="Digite sua cidade" />
+        <div *ngIf="dataInsertionForm.get('city')?.invalid && dataInsertionForm.get('city')?.touched" class="error-message">
+          {{ getErrorMessage('city') }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company" class="label">Empresa</label>
+        <input id="company" type="text" formControlName="company" class="input" placeholder="Digite o nome da empresa" />
+        <div *ngIf="dataInsertionForm.get('company')?.invalid && dataInsertionForm.get('company')?.touched" class="error-message">
+          {{ getErrorMessage('company') }}
+        </div>
+      </div>
+      <button type="submit" [disabled]="dataInsertionForm.invalid" class="submit-button">
+        Enviar
+      </button>
+    </form>
+  </div>
+  
