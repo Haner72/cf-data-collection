@@ -1,7 +1,7 @@
 <div class="geral">
     <form [formGroup]="dataInsertionForm" (ngSubmit)="onSubmit()" class="form">
       <div class="form-group">
-        <label for="name" class="label">Nome</label>
+        <label for="name" class="label">Nome Completo</label>
         <input id="name" type="text" formControlName="name" class="input" placeholder="Digite seu nome" />
         <div *ngIf="dataInsertionForm.get('name')?.invalid && dataInsertionForm.get('name')?.touched" class="error-message">
           {{ getErrorMessage('name') }}

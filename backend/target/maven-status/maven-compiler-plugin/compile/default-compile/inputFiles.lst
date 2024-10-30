@@ -1,5 +1,5 @@
-C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\service\DIService.java
-C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\repository\DIRepository.java
 C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\Application.java
-C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\controller\DIController.java
-C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\model\DIModel.java
+C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\model\UserModel.java
+C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\controller\UserController.java
+C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\repository\UserRepository.java
+C:\Users\Gustavo\Desktop\cf-data-collection\backend\src\main\java\com\data\collection\service\UserService.java

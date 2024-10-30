@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-data-insertion',
   templateUrl: './data-insertion.component.html',
   styleUrls: ['./data-insertion.component.css'],
-  imports:[CommonModule, DataInsertion, ReactiveFormsModule],
+  imports:[CommonModule, ReactiveFormsModule],
   standalone: true
 })
 export class DataInsertion {
