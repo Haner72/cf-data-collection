@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import axios from 'axios';
 
 @Component({
   selector: 'app-data-insertion',
@@ -23,8 +24,15 @@ export class DataInsertion {
     });
   }
 
-  onSubmit() {
-    console.log('Os valores foram enviados:', this.dataInsertionForm.value);
+  async onSubmit() {
+    if (this.dataInsertionForm.valid) {
+      try {
+        const response = await axios.post('http://localhost:8080/users', this.dataInsertionForm.value);
+        console.log('Dados enviados com sucesso: ', response);
+      } catch (error) {
+        console.error('Não foi possível enviar dados: ', error);
+      }
+    }
   }
 
   getErrorMessage(controlName: string): string {
