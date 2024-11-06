@@ -1,1 +1,11 @@
-<p>collection works!</p>
+<div class="titulo">
+<h1>COLEÇÃO</h1>
+</div>
+<div *ngFor="let client of clients">
+    <p>Nome: {{ client.name }}</p>
+    <p>Email: {{ client.email }}</p>
+    <p>Telefone: {{ client.phone }}</p>
+    <p>Cidade: {{ client.city }}</p>
+    <p>Empresa: {{ client.company }}</p>
+    <hr />
+</div>

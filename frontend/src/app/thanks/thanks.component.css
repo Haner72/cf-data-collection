@@ -1,0 +1,11 @@
+.geral {
+    background-color:rgb(129, 238, 129) ;
+    margin: 0;
+    height: 95vh;
+}
+
+ .titulo {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }

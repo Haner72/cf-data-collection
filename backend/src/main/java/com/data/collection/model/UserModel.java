@@ -15,9 +15,9 @@ public class UserModel {
 
     private String name;
     private String email;
-    private String telefone;
-    private String cidade;
-    private String empresa;
+    private String phone;
+    private String city;
+    private String company;
 
     public String getName() {
         return name;
@@ -35,28 +35,28 @@ public class UserModel {
         this.email = email;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getCity() {
+        return city;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getEmpresa() {
-        return empresa;
+    public String getCompany() {
+        return company;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public Long getId() {
