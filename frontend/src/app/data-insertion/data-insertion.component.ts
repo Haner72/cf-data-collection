@@ -37,7 +37,7 @@ export class DataInsertion {
     }
   }
 
-  returnHome() {
+  goToHome() {
     this.nagivationService.navigateTo('/home')
   }
 

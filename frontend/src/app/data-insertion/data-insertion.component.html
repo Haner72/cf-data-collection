@@ -1,8 +1,7 @@
-<div class="titulo">
-  <h1>Olá cliente! Insira seus dados corretamente
-  </h1>
-</div>
 <div class="geral">
+  <div class="titulo">
+    <h1>Olá cliente! Insira seus dados corretamente.</h1>
+  </div>
     <form [formGroup]="dataInsertionForm" (ngSubmit)="onSubmit()" class="form">
       <div class="form-group">
         <label for="name" class="label">Nome Completo</label>
@@ -40,10 +39,8 @@
         </div>
       </div>
       <div class="buttons">
-        <button class="return" type="button" (click)="returnHome()">Voltar</button>
-        <button type="submit" [disabled]="dataInsertionForm.invalid" class="submit">
-          Enviar
-        </button>
+        <button class="voltar" (click)="goToHome()">Voltar</button>
+        <button class="enviar" (click)="onSubmit()">Enviar</button>
     </div>
     </form>
   </div>

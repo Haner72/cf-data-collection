@@ -1,11 +1,14 @@
 <div class="titulo">
-<h1>COLEÇÃO</h1>
-</div>
-<div *ngFor="let client of clients">
-    <p>Nome: {{ client.name }}</p>
-    <p>Email: {{ client.email }}</p>
-    <p>Telefone: {{ client.phone }}</p>
-    <p>Cidade: {{ client.city }}</p>
-    <p>Empresa: {{ client.company }}</p>
-    <hr />
-</div>
+    <h1>COLEÇÃO</h1>
+  </div>
+
+  <div class="user-list">
+    <div *ngFor="let client of clients" class="user-card">
+      <h2>{{ client.name }}</h2>
+      <p><strong>Email:</strong> {{ client.email }}</p>
+      <p><strong>Telefone:</strong> {{ client.phone }}</p>
+      <p><strong>Cidade:</strong> {{ client.city }}</p>
+      <p><strong>Empresa:</strong> {{ client.company }}</p>
+      <hr />
+    </div>
+  </div>
