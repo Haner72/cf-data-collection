@@ -24,7 +24,7 @@
   
   .form {
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     width: 100%;
     max-width: 500px;
     border-radius: 8px ;
@@ -63,7 +63,7 @@
   }
 
   .voltar {
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     color: rgb(0, 0, 0);
     margin-right: 10px;
     flex: 1;
