@@ -1,11 +1,37 @@
 .geral {
-    background-color:rgb(129, 238, 129) ;
-    margin: 0;
     height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
- .titulo {
+.titulo {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
- }
+    font-size: xx-large;
+    color: #006b50;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #00ff6a;
+    border-radius: 8px;
+    max-width: 750px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.agradecimento {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    padding: 25px;
+    margin: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}

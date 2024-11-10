@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NavigationService } from '../navigation.service';
 import axios from 'axios';
 
 @Component({
@@ -11,6 +12,8 @@ import axios from 'axios';
 })
 export class Collection implements OnInit {
   clients: any[] = [];
+
+  constructor(private navigationService: NavigationService) {}
   
   async ngOnInit() {
     try {
@@ -20,4 +23,9 @@ export class Collection implements OnInit {
       console.error('Não foi possível carregar a lista de clientes:', error);
     }
   }
+
+  goToHome() {
+    this.navigationService.navigateTo('/home');
+  }
+
 }
