@@ -5,6 +5,9 @@
 
   <div class="user-list">
     <div *ngFor="let client of clients" class="user-card">
+      <button class="delete-button" (click)="deleteClient(client)">
+        🗑️
+      </button>
       <h2>{{ client.name }}</h2>
       <p><strong>Email:</strong> {{ client.email }}</p>
       <p><strong>Telefone:</strong> {{ client.phone }}</p>
@@ -13,5 +16,6 @@
       <hr />
     </div>
   </div>
+  
     <button class="voltar" (click)="goToHome()">Voltar</button>
 </div>

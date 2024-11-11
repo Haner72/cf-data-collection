@@ -1,5 +1,0 @@
-com\data\collection\Application.class
-com\data\collection\repository\UserRepository.class
-com\data\collection\model\UserModel.class
-com\data\collection\controller\UserController.class
-com\data\collection\service\UserService.class

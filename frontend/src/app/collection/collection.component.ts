@@ -28,4 +28,14 @@ export class Collection implements OnInit {
     this.navigationService.navigateTo('/home');
   }
 
+  async deleteClient(client: any) {
+    try {
+      await axios.delete(`http://localhost:8080/users/${client.id}`);
+      this.clients = this.clients.filter(c => c.id !== client.id);
+    } catch (error) {
+      console.error('Não foi possível apagar o cliente:', error);
+    }
+  }
+  
+
 }

@@ -1,10 +1,15 @@
- <div class="geral">
+<div class="geral">
     <div class="cliente">
         <img src="https://lh6.googleusercontent.com/b9Q3m1xUyrXRtKjOA1hHOkmmjCXOAlFzrKci8IcP8rvSAxpACKJ97NuD5iOdSLK0LGaa759eq9E_WmmChaPWpJjjCcG3HT_ukyfoo4CSa38wje33UYlDeo6jlIG2Gcs6uYzOIscs" width="1000" height="900">
         <button (click)="goToDataInsertion()">Entrar como Cliente</button>
     </div>
     <div class="funcionario">
         <img src="https://www.unochapeco.edu.br/static/data/portal/posts/fotos/640x640/1470.jpg" width="1000" height="900">
-        <button (click)="goToCollection()">Entrar como Funcionário</button>
+        <div class="login-wrapper">
+            <button (click)="goToCollection()">Entrar como Funcionário</button>
+            <div class="login-container">
+                <input type="password" [(ngModel)]="password" placeholder="Digite a senha" />
+            </div>
+        </div>
     </div>
 </div>

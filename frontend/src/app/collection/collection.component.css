@@ -20,22 +20,30 @@
   }
   
   .user-card {
+    position: relative;
     background-color: #f9f9f9;
     border: 1px solid #ff6604;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+  }
+
+  .user-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   .user-card h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .user-card p {
     font-size: 1rem;
     color: #555;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .user-card hr {
@@ -59,3 +67,18 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   
+  .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff6604;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  .user-card:hover .delete-button {
+    display: block;
+  }
